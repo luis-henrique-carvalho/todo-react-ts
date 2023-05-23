@@ -9,11 +9,11 @@ interface Props {
 const TaskForm = ({ btnText }: Props) => {
     return (
         <TaskFormStyled>
-            <div>
+            <div className='input-container'>
                 <label htmlFor="title">Título:</label>
                 <input type="text" name='title' placeholder='Título da tarefa' />
             </div>
-            <div>
+            <div className='input-container'>
                 <label htmlFor="title">Dificuldade:</label>
                 <input type="text" name='dificulty' placeholder='Dificuldade da tarefa' />
             </div>

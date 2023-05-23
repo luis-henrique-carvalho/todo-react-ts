@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import { styled, ThemeProvider } from "styled-components";
 
 // Components
 import Header from "./components/Header";
@@ -8,6 +8,8 @@ import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 
 // Styles
+
+import { theme } from "./styles";
 const Main = styled.main`
   min-height: 60vh;
   text-align: center;
@@ -20,14 +22,17 @@ const Main = styled.main`
 
 function App() {
   return (
-    <>
+
+    <ThemeProvider theme={theme}>
       <Header />
       <Main>
         <h2>Conteúdo...</h2>
-        <TaskForm btnText="Criar Tarefa"/>
+        <TaskForm btnText="Criar Tarefa" />
+        <TaskList/>
       </Main>
       <Footer />
-    </>
+    </ThemeProvider>
+
   );
 }
 
