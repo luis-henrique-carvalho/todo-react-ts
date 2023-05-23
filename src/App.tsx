@@ -4,7 +4,10 @@ import styled from "styled-components";
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import TaskForm from "./components/TaskForm";
+import TaskList from "./components/TaskList";
 
+// Styles
 const Main = styled.main`
   min-height: 60vh;
   text-align: center;
@@ -21,6 +24,7 @@ function App() {
       <Header />
       <Main>
         <h2>Conteúdo...</h2>
+        <TaskForm btnText="Criar Tarefa"/>
       </Main>
       <Footer />
     </>

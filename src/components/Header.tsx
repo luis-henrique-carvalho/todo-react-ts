@@ -9,7 +9,6 @@ const HeaderStyled = styled.header `
   
 `
 
-
 const Header = () => {
   return (
     <HeaderStyled>
