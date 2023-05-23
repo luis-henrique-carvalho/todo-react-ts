@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { styled, ThemeProvider } from "styled-components";
 
 // Components
@@ -7,8 +7,10 @@ import Footer from "./components/Footer";
 import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 
-// Styles
+// Interfaces
+import { ITask } from './interfaces/Task'
 
+// Styles
 import { theme } from "./styles";
 const Main = styled.main`
   min-height: 60vh;
@@ -20,15 +22,18 @@ const Main = styled.main`
   }
 `;
 
-function App() {
-  return (
 
+
+function App() {
+  const [taskList, setTaskList] = useState<ITask[]>([])
+
+  return (
     <ThemeProvider theme={theme}>
       <Header />
       <Main>
         <h2>Conteúdo...</h2>
-        <TaskForm btnText="Criar Tarefa" />
-        <TaskList/>
+        <TaskForm btnText="Criar Tarefa" taskList={taskList} setTaskList={setTaskList} />
+        <TaskList />
       </Main>
       <Footer />
     </ThemeProvider>
