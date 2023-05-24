@@ -26,24 +26,20 @@ const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
         }
 
         setTaskList!([...taskList, newTask])
+        
+        console.log(taskList)
 
         setTitle('')
         setDifficulty(0)
-
-        console.log(taskList)
-
 
     }
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         if (e.target.name === 'title') {
             setTitle(e.target.value)
-           
         } else {
             setDifficulty(parseInt(e.target.value))
-          
         }
-
     }
 
     return (

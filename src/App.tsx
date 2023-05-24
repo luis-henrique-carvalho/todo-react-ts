@@ -33,7 +33,7 @@ function App() {
       <Main>
         <h2>Conteúdo...</h2>
         <TaskForm btnText="Criar Tarefa" taskList={taskList} setTaskList={setTaskList} />
-        <TaskList />
+        <TaskList taskList={taskList}/>
       </Main>
       <Footer />
     </ThemeProvider>

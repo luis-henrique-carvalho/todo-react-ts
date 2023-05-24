@@ -48,3 +48,45 @@ export const TaskFormStyled = styled.form`
     margin-bottom: 0.4em;
   }
 `;
+
+export const TaskListStyled = styled.div `
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+  padding: 1em;
+
+  .details {
+    text-align: left;
+  }
+
+  .details h4 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions i{
+    margin-bottom: .5em;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: ${(props) => props.theme.colors.secondary};
+    color: white;
+    padding: .4em;
+    transition: .5s;
+  }
+
+  .actions i:hover{
+    
+    color: ${(props) => props.theme.colors.primary};
+    
+  }
+
+`
