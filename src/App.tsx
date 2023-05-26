@@ -8,7 +8,7 @@ import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 
 // Interfaces
-import { ITask } from './interfaces/Task'
+import { ITask } from "./interfaces/Task";
 
 // Styles
 import { theme } from "./styles";
@@ -22,22 +22,31 @@ const Main = styled.main`
   }
 `;
 
-
-
 function App() {
-  const [taskList, setTaskList] = useState<ITask[]>([])
+  const [taskList, setTaskList] = useState<ITask[]>([]);
+
+  const deleteTask = (id: number) => {
+    setTaskList(
+      taskList.filter((task) => {
+        return task.id !== id;
+      })
+    );
+  };
 
   return (
     <ThemeProvider theme={theme}>
       <Header />
       <Main>
         <h2>Conteúdo...</h2>
-        <TaskForm btnText="Criar Tarefa" taskList={taskList} setTaskList={setTaskList} />
-        <TaskList taskList={taskList}/>
+        <TaskForm
+          btnText="Criar Tarefa"
+          taskList={taskList}
+          setTaskList={setTaskList}
+        />
+        <TaskList taskList={taskList} handleDelete={deleteTask} />
       </Main>
       <Footer />
     </ThemeProvider>
-
   );
 }
 

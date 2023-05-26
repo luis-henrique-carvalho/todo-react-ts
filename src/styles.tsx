@@ -44,12 +44,12 @@ export const TaskFormStyled = styled.form`
   }
 
   .input-container label {
-    font-weight: bold;  
+    font-weight: bold;
     margin-bottom: 0.4em;
   }
 `;
 
-export const TaskListStyled = styled.div `
+export const TaskListStyled = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 400px;
@@ -64,7 +64,6 @@ export const TaskListStyled = styled.div `
   .details h4 {
     font-size: 1.2em;
     margin-bottom: 1em;
-
   }
 
   .actions {
@@ -73,20 +72,17 @@ export const TaskListStyled = styled.div `
     align-items: center;
   }
 
-  .actions i{
-    margin-bottom: .5em;
+  .actions i {
+    margin-bottom: 0.5em;
     font-size: 1.2em;
     cursor: pointer;
     background-color: ${(props) => props.theme.colors.secondary};
     color: white;
-    padding: .4em;
-    transition: .5s;
+    padding: 0.4em;
+    transition: 0.5s;
   }
 
-  .actions i:hover{
-    
+  .actions i:hover {
     color: ${(props) => props.theme.colors.primary};
-    
   }
-
-`
+`;
