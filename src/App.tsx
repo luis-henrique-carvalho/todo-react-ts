@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
-
+import Modal from "./components/Modal";
 // Interfaces
 import { ITask } from "./interfaces/Task";
 
@@ -35,6 +35,10 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <Modal
+        children={<TaskForm btnText="Editar Tarefa" taskList={taskList} />}
+      />
+
       <Header />
       <Main>
         <h2>Conteúdo...</h2>

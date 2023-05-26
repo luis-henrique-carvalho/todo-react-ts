@@ -1,4 +1,5 @@
 import React from "react";
+import { ModalStyled } from "../styles";
 
 import { TaskListStyled } from "../styles";
 

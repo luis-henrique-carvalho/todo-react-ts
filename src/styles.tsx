@@ -86,3 +86,41 @@ export const TaskListStyled = styled.div`
     color: ${(props) => props.theme.colors.primary};
   }
 `;
+
+export const ModalStyled = styled.div`
+  .fade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.3;
+  }
+
+  .modal {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .modal h2 {
+    margin-bottom: 1em;
+  }
+
+  .modal form {
+    width: 90%;
+  }
+
+  .hide {
+    display: none !important;
+  }
+`;
