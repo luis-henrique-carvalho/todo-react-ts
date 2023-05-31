@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styled, ThemeProvider } from "styled-components";
-
+import GlobalSyles from "./styles/GlobalSyles";
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -11,7 +11,7 @@ import Modal from "./components/Modal";
 import { ITask } from "./interfaces/Task";
 
 // Styles
-import { theme } from "./styles";
+import { theme } from "./styles/styles";
 const Main = styled.main`
   min-height: 60vh;
   text-align: center;
@@ -24,6 +24,8 @@ const Main = styled.main`
 
 function App() {
   const [taskList, setTaskList] = useState<ITask[]>([]);
+  const [hide, setHide] = useState(true);
+  const [taskToUpdate, setTaskToUpdate] = useState<ITask | null>(null);
 
   const deleteTask = (id: number) => {
     setTaskList(
@@ -33,10 +35,33 @@ function App() {
     );
   };
 
+  const updateTask = (id: number, title: string, difficulty: number) => {
+    const updatedTask: ITask = { id, title, difficulty };
+    const updatedItems = taskList.map((task) => {
+      return task.id === updatedTask.id ? updatedTask : task;
+    });
+
+    setTaskList(updatedItems)
+
+    setHide(true)
+  };
+
+
   return (
     <ThemeProvider theme={theme}>
+      <GlobalSyles />
       <Modal
-        children={<TaskForm btnText="Editar Tarefa" taskList={taskList} />}
+        setHide={setHide}
+        hide={hide}
+        children={
+          <TaskForm
+            btnText="Editar Tarefa"
+            setTaskList={setTaskList}
+            taskList={taskList}
+            task={taskToUpdate}
+            handleUpdate={updateTask}
+          />
+        }
       />
 
       <Header />
@@ -47,7 +72,12 @@ function App() {
           taskList={taskList}
           setTaskList={setTaskList}
         />
-        <TaskList taskList={taskList} handleDelete={deleteTask} />
+        <TaskList
+          taskList={taskList}
+          setHide={setHide}
+          handleDelete={deleteTask}
+          setTaskToUpdate={setTaskToUpdate}
+        />
       </Main>
       <Footer />
     </ThemeProvider>

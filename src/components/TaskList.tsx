@@ -1,7 +1,7 @@
 import React from "react";
-import { ModalStyled } from "../styles";
+import { ModalStyled } from "../styles/styles";
 
-import { TaskListStyled } from "../styles";
+import { TaskListStyled } from "../styles/styles";
 
 import { ITask } from "../interfaces/Task";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
@@ -9,9 +9,21 @@ import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 interface Props {
   taskList: ITask[];
   handleDelete: (id: number) => void;
+  setHide: React.Dispatch<React.SetStateAction<boolean>>;
+  setTaskToUpdate: React.Dispatch<React.SetStateAction<ITask | null>>;
 }
 
-const TaskList = ({ taskList, handleDelete }: Props) => {
+const TaskList = ({
+  taskList,
+  handleDelete,
+  setHide,
+  setTaskToUpdate,
+}: Props) => {
+  const handleClick = (task: ITask) => {
+    setHide(false);
+    setTaskToUpdate(task);
+  };
+
   return (
     <>
       {taskList.length > 0 ? (
@@ -19,14 +31,14 @@ const TaskList = ({ taskList, handleDelete }: Props) => {
           <TaskListStyled key={task.id}>
             <div className="details">
               <h4>{task.title}</h4>
-              <p>Dificuldade; {task.difficulty}</p>
+              <p>Dificuldade: {task.difficulty}</p>
             </div>
             <div className="actions">
-              <i>
+              <i onClick={() => handleClick(task)}>
                 <AiFillEdit />
               </i>
               <i onClick={() => handleDelete(task.id)}>
-                <AiFillDelete  />
+                <AiFillDelete />
               </i>
             </div>
           </TaskListStyled>

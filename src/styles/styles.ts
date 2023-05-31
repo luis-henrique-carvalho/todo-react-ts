@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+interface ModalPros {
+  modal: boolean;
+}
 export const theme = {
   colors: {
     primary: "#61dafb",
@@ -87,7 +90,9 @@ export const TaskListStyled = styled.div`
   }
 `;
 
-export const ModalStyled = styled.div`
+export const ModalStyled = styled.div<ModalPros>`
+  display: ${(props) => (props.modal ? "none !important" : "block")};
+  
   .fade {
     width: 100%;
     height: 100%;
@@ -118,9 +123,5 @@ export const ModalStyled = styled.div`
 
   .modal form {
     width: 90%;
-  }
-
-  .hide {
-    display: none !important;
   }
 `;
