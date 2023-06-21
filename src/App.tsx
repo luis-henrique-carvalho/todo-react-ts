@@ -66,7 +66,7 @@ function App() {
 
       <Header />
       <Main>
-        <h2>Conteúdo...</h2>
+        <h2>Tarefas</h2>
         <TaskForm
           btnText="Criar Tarefa"
           taskList={taskList}

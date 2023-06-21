@@ -1,46 +1,72 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# todo-react-ts
 
-## Available Scripts
+O projeto "todo-ts" é uma aplicação de lista de tarefas desenvolvida em TypeScript. Com uma abordagem orientada a objetos, o projeto oferece recursos para adicionar, editar e remover tarefas, além de permitir a marcação de tarefas como concluídas. A interface amigável e responsiva proporciona uma experiência intuitiva para os usuários, ajudando-os a organizar suas atividades diárias de forma eficiente. O "todo-ts" é um projeto versátil e flexível, adequado para uso pessoal ou em equipes, e pode ser facilmente personalizado e expandido para atender às necessidades específicas de cada usuário.
 
-In the project directory, you can run:
 
-### `npm start`
+## 🚀 Sobre mim
+Brasileiro nascido na Bahia, sou um jovem apaixonado pela tecnologia e entusiasta no mundo da programação, disposto a aprender e evoluir cada vez mais. Possuo experiência nas seguintes tecnologias: HTML, CSS, JavaScript, TypeScript, ReactJS, React Native, Node.js, MongoDb, SQL , Git e GitHub.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Aprendizados
 
-### `npm test`
+Durante a construção do projeto "To-Do App" utilizando TypeScript, adquiri os seguintes aprendizados e superei desafios:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- TypeScript: Aprendi a usar TypeScript para desenvolver o aplicativo, aproveitando os benefícios de um sistema de tipos estáticos. Isso me permitiu identificar erros de digitação e garantir uma maior segurança e robustez no código.
 
-### `npm run build`
+- Tipagem de dados: Aprendi a definir tipos explícitos para as variáveis, parâmetros de função e retorno, proporcionando uma melhor compreensão do fluxo de dados e evitando erros de tipo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Refatoração: Enfrentei o desafio de refatorar o código existente, migrando-o de JavaScript para TypeScript. Durante esse processo, atualizei a sintaxe e ajustei as declarações de tipos, garantindo a compatibilidade e melhor legibilidade do código.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Integração com bibliotecas: Aprendi a integrar bibliotecas e frameworks TypeScript ao projeto, como React ou Angular, aproveitando os recursos e benefícios adicionais que essas ferramentas oferecem para o desenvolvimento de interfaces de usuário interativas e responsivas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ao longo do desenvolvimento, superei esses desafios por meio de pesquisa, leitura da documentação oficial do TypeScript, prática constante e consultas à comunidade de desenvolvedores. Através dessas experiências, obtive um conhecimento mais aprofundado do TypeScript e me tornei mais hábil em desenvolver aplicativos usando essa linguagem de programação tipada.
 
-### `npm run eject`
+## Rodando localmente
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Clone o projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  git clone https://github.com/luis-henrique-carvalho/todo-react-ts
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Entre no diretório do projeto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+  cd todo-react-ts
+```
 
-## Learn More
+Instale as dependências
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Inicie o servidor
+
+```bash
+  npm run start
+```
+
+
+## Stack utilizada
+
+**Front-end:** React, Typescript, Styled Components
+
+**Back-end:** Em produção... 
+
+
+
+## Funcionalidades
+
+- Adicionar tarefas: 
+- Remover tarefas
+- Editar tarefa
+
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://meu-site-flax.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luis-henrique-072244213/)
+
+
