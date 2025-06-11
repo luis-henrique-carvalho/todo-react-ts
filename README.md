@@ -3,7 +3,6 @@
 
 O projeto "todo-ts" é uma aplicação de lista de tarefas desenvolvida em TypeScript. Com uma abordagem orientada a objetos, o projeto oferece recursos para adicionar, editar e remover tarefas, além de permitir a marcação de tarefas como concluídas. A interface amigável e responsiva proporciona uma experiência intuitiva para os usuários, ajudando-os a organizar suas atividades diárias de forma eficiente. O "todo-ts" é um projeto versátil e flexível, adequado para uso pessoal ou em equipes, e pode ser facilmente personalizado e expandido para atender às necessidades específicas de cada usuário.
 
-
 ## 🚀 Sobre mim
 Brasileiro nascido na Bahia, sou um jovem apaixonado pela tecnologia e entusiasta no mundo da programação, disposto a aprender e evoluir cada vez mais. Possuo experiência nas seguintes tecnologias: HTML, CSS, JavaScript, TypeScript, ReactJS, React Native, Node.js, MongoDb, SQL , Git e GitHub.
 
