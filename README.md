@@ -6,7 +6,6 @@ O projeto "todo-ts" é uma aplicação de lista de tarefas desenvolvida em TypeS
 ## 🚀 Sobre mim
 Brasileiro nascido na Bahia, sou um jovem apaixonado pela tecnologia e entusiasta no mundo da programação, disposto a aprender e evoluir cada vez mais. Possuo experiência nas seguintes tecnologias: HTML, CSS, JavaScript, TypeScript, ReactJS, React Native, Node.js, MongoDb, SQL , Git e GitHub.
 
-
 ## Aprendizados
 
 Durante a construção do projeto "To-Do App" utilizando TypeScript, adquiri os seguintes aprendizados e superei desafios:
