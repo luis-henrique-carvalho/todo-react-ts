@@ -46,7 +46,6 @@ Inicie o servidor
   npm run start
 ```
 
-
 ## Stack utilizada
 
 **Front-end:** React, Typescript, Styled Components
