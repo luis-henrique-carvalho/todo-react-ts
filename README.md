@@ -16,8 +16,6 @@ Durante a construção do projeto "To-Do App" utilizando TypeScript, adquiri os 
 
 - Refatoração: Enfrentei o desafio de refatorar o código existente, migrando-o de JavaScript para TypeScript. Durante esse processo, atualizei a sintaxe e ajustei as declarações de tipos, garantindo a compatibilidade e melhor legibilidade do código.
 
-- Integração com bibliotecas: Aprendi a integrar bibliotecas e frameworks TypeScript ao projeto, como React ou Angular, aproveitando os recursos e benefícios adicionais que essas ferramentas oferecem para o desenvolvimento de interfaces de usuário interativas e responsivas.
-
 Ao longo do desenvolvimento, superei esses desafios por meio de pesquisa, leitura da documentação oficial do TypeScript, prática constante e consultas à comunidade de desenvolvedores. Através dessas experiências, obtive um conhecimento mais aprofundado do TypeScript e me tornei mais hábil em desenvolver aplicativos usando essa linguagem de programação tipada.
 
 ## Rodando localmente
